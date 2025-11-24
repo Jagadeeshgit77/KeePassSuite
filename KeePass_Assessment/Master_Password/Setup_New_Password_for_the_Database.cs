@@ -24,22 +24,22 @@ namespace KeePass_Assessment.Master_Password
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Setup_New_Password_for_the_Database recording.
+    ///The Setup_New_password_for_the_Database recording.
     /// </summary>
     [TestModule("5d9a9d72-df67-4b68-9fc0-3b752f9762cf", ModuleType.Recording, 1)]
-    public partial class Setup_New_Password_for_the_Database : ITestModule
+    public partial class Setup_New_password_for_the_Database : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::KeePass_Assessment.KeePass_AssessmentRepository repository.
         /// </summary>
         public static global::KeePass_Assessment.KeePass_AssessmentRepository repo = global::KeePass_Assessment.KeePass_AssessmentRepository.Instance;
 
-        static Setup_New_Password_for_the_Database instance = new Setup_New_Password_for_the_Database();
+        static Setup_New_password_for_the_Database instance = new Setup_New_password_for_the_Database();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Setup_New_Password_for_the_Database()
+        public Setup_New_password_for_the_Database()
         {
             Password = "TestPass123";
         }
@@ -47,7 +47,7 @@ namespace KeePass_Assessment.Master_Password
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Setup_New_Password_for_the_Database Instance
+        public static Setup_New_password_for_the_Database Instance
         {
             get { return instance; }
         }

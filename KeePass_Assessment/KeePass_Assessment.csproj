@@ -176,13 +176,13 @@
     </Compile>
     <Compile Include="Master_Password\Setup_New_Password_for_the_Database.cs">
       <BoundTo>f9921d40-9d9d-4760-9564-6ac6e002ef8b</BoundTo>
-      <DependentUpon>Setup_New_Password_for_the_Database.rxrec</DependentUpon>
+      <DependentUpon>Setup_New_password_for_the_Database.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>2ad073a0-d85d-4f80-a81c-7c91f7a32a71</id>
     </Compile>
     <Compile Include="Master_Password\Setup_New_Password_for_the_Database.UserCode.cs">
       <BoundTo>f9921d40-9d9d-4760-9564-6ac6e002ef8b</BoundTo>
-      <DependentUpon>Setup_New_Password_for_the_Database.rxrec</DependentUpon>
+      <DependentUpon>Setup_New_password_for_the_Database.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>8eaea2a4-48fc-43df-9ea6-7b061dd2be54</id>
     </Compile>
@@ -328,7 +328,7 @@
       <id>3cbce622-b1c3-4df3-8e45-fa82f6b863a5</id>
       <recordtableid>44bf0c99-9444-49ae-935e-f865eb8d9098</recordtableid>
     </None>
-    <None Include="Master_Password\Setup_New_Password_for_the_Database.rxrec">
+    <None Include="Master_Password\Setup_New_password_for_the_Database.rxrec">
       <BoundTo>e6ff9fc8-4a6a-4022-b010-a572a097c101</BoundTo>
       <id>f9921d40-9d9d-4760-9564-6ac6e002ef8b</id>
       <recordtableid>5d9a9d72-df67-4b68-9fc0-3b752f9762cf</recordtableid>

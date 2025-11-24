@@ -121,7 +121,7 @@
 			</testsuite>
 			<testmodule
 			id="338f637d-44d9-43ad-8608-c0eb73652584"
-			name="Setup_New_Password_for_the_Database"
+			name="Setup_New_password_for_the_Database"
 			ref="5d9a9d72-df67-4b68-9fc0-3b752f9762cf"
 			type="Recording">
 				<databinding>
@@ -336,7 +336,7 @@
 						</testmodule>
 						<testmodule
 						id="338f637d-44d9-43ad-8608-c0eb73652584"
-						name="Setup_New_Password_for_the_Database">
+						name="Setup_New_password_for_the_Database">
 						</testmodule>
 						<testmodule
 						id="bf4adb90-9d9e-470a-a84f-43764fe4f745"

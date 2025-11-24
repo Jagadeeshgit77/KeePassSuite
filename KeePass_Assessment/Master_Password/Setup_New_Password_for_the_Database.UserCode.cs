@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace KeePass_Assessment.Master_Password
 {
-    public partial class Setup_New_Password_for_the_Database
+    public partial class Setup_New_password_for_the_Database
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
