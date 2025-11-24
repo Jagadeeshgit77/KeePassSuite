@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="0cf9fd5b-0d8d-41bd-95e2-2a4c6ecb6a32"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Add_Entry"
+	namespace="KeePass_Assessment.Tool_Bar">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="8a5aca91-453d-4b20-9f01-c30ac1c73afb"
+		sx="752"
+		sy="324"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="95e90cc4-ea0e-492f-bc6f-81e027bc93ec"
+			sourcename="Recorder">
+				<element
+				capabilities="uiautomation, uiautomationinvoke"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="True"
+				index="6"
+				prefcap="button"
+				rect="740,313,32,22"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Add Entry
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Button
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						Add Entry
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						6492
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='MainForm']/?/?/button[@name='Add Entry']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="5b18fb14-e6b1-4cab-94d4-9b502f669c86">
+				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
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="da8565db-470d-4c43-ab42-06c208eeb799"
+	name="KeePass_AssessmentRepository"
+	relativepath="..\KeePass_AssessmentRepository.rxrep">
+		<codegen
+		classname="KeePass_AssessmentRepository"
+		namespace="KeePass_Assessment">
+		</codegen>
+		<rootfolder
+		id="a02d2631-cac4-472d-84fc-95875401a1e7"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Add_Entry.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

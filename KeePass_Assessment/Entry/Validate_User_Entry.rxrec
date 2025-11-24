@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="a27766c4-7522-4955-91a7-957f5404a378"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Validate_User_Entry"
+	namespace="KeePass_Assessment.Entry">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e25365cd-570b-4442-a1ba-c572564c087f"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="22fbac8a-d7a3-498c-b558-d775d807c85f"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities=""
+				dontcache="False"
+				enabled="True"
+				flavor="winforms"
+				hasfocus="True"
+				index="0"
+				prefcap="cell"
+				rect="800,399,90,20"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="columnindex"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="image"
+					type="System.Drawing.Image, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAmlJREFUOE+NkW1IU1Ecxu9edJOt4Sy1KOfuVtfZBmtudw5FVkv9EI3o
+S5QpfYgKimxQRMV6QSsqy17wQy8QRFFBmkSIIhSY0GBKKkrULHNluVq+b7PNtqcjXhiCOX/wcO89
+/+cH95xDJUImk6VVllrqXCeWj58s1bhnv7lRYkpMpvJHFfSXny+SgF8UAh18OGw5bjKSzjUWoYRl
+93RcTo3M9PCAAQojbSK0XhDF+q8JcGTjunZSSZ5rLkCmRJJRfzTbj14K6CLxCdF5m4nZlNqulmPJ
+f6ZeSnC4UPvqv9upLjO3TrkEQA+RPSRBChMfsvD8kCo40MBEgb3wVaWhmDXWccp8zu7IeR9284FB
+Io+R/CXvyAIixeR5kawfRMNWcazAZLrKKfPZXlR43vNUhKifHNwQhVhMQcRtJLdI7sHrXA0rnd0t
+lUpXcEqcPL22tPnMmrHAZz7GXTyEBpVE2klSC4SuI/wwD5UqcVCn023hlDg6jcZa78wai3zjYfId
+HzNDNBE3kyu0A0P7MHxFAYdSNJ3Psuc4JY5Gs9by2EmPhL/yMNUrQPR7BvBDgcnGlXi7X4zXu4Ww
+K+TDBoOhglPiMAzDPjit8oe9PAS7yZ77UjDRJscde0q0LDd1xKLXPykwGmtommY5Jc6sfP8U4wv0
+CxDykNMeXYa+uxLs0qZOmo3sDbVabeSqC3PpgKE34BFg+iOFSKcQ/hYZHJvkYfKr5VxlcZpvrgrA
+R+56VIymaimKGOUnC8vWkJFwrpGAxqqMaW9TEjzPpLCbM3+np6erudHSsBXm19pMue3WDevfmM3m
+49zyEqGof2YHLYxRPLorAAAAAElFTkSuQmCC
+					</attribute>
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="rowindex"
+					type="System.Int32">
+						2
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						My Practice Site
+					</attribute>
+					<dynamicattribute
+					description="The header of the group a list item belongs to."
+					name="GroupHeader"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The name of the group a list item belongs to."
+					name="GroupName"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/form[@controlname='MainForm']//?//cell[@text=$User_Entry]
+				</path>
+				<robustPath>
+					/form[@controlname='MainForm']//cell[@text='My Practice Site']
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="da8565db-470d-4c43-ab42-06c208eeb799"
+	name="KeePass_AssessmentRepository"
+	relativepath="..\KeePass_AssessmentRepository.rxrep">
+		<codegen
+		classname="KeePass_AssessmentRepository"
+		namespace="KeePass_Assessment">
+		</codegen>
+		<rootfolder
+		id="a02d2631-cac4-472d-84fc-95875401a1e7"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Validate_User_Entry.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

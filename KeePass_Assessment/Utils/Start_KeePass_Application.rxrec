@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="9cd96202-7e4c-43ca-9144-b25a4c700486"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Start_KeePass_Application"
+	namespace="KeePass_Assessment.Utils">
+	</codegen>
+	<variables>
+		<var
+		id="9a7ff503-fc46-4530-aa55-c7c7671634c8"
+		name="StartAutProcessIDVar">
+			‪C:\Users\Planit-1\Desktop\KeePass-2.60\KeePass.exe
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="FileName"
+				variable="StartAutProcessIDVar">
+				</binding>
+			</bindings>
+			<filename>
+				‪C:\Users\Planit-1\Desktop\KeePass-2.60\KeePass.exe
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+	</recorditems>
+	<repository
+	id="da8565db-470d-4c43-ab42-06c208eeb799"
+	name="KeePass_AssessmentRepository"
+	relativepath="..\KeePass_AssessmentRepository.rxrep">
+		<codegen
+		classname="KeePass_AssessmentRepository"
+		namespace="KeePass_Assessment">
+		</codegen>
+		<rootfolder
+		id="a02d2631-cac4-472d-84fc-95875401a1e7"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Start_KeePass_Application.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

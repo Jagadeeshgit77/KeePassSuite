@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="KeePass_Assessment"
+      id="2805a0d4-e99c-4b86-a2ed-4e3a0179590f"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="KeePass_Assessment"
+      id="2805a0d4-e99c-4b86-a2ed-4e3a0179590f"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

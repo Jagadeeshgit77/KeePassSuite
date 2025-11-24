@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="eb6397bf-7664-41f5-a28d-7bfa434372fe"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_KeePass_Application"
+	namespace="KeePass_Assessment.Utils">
+	</codegen>
+	<variables>
+		<var
+		id="0034e01b-cc21-4936-b135-37edb77224c7"
+		name="CloseAutProcessIDVar">
+			-1
+		</var>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="10000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="8d44d1ff-395f-43b5-904d-8173f55f4c6b">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ProcessID"
+				variable="CloseAutProcessIDVar">
+				</binding>
+			</bindings>
+			<info
+			id="cfb4dc76-378a-49ce-aa06-4195d462a4d0"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='MainForm']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="da8565db-470d-4c43-ab42-06c208eeb799"
+	name="KeePass_AssessmentRepository"
+	relativepath="..\KeePass_AssessmentRepository.rxrep">
+		<codegen
+		classname="KeePass_AssessmentRepository"
+		namespace="KeePass_Assessment">
+		</codegen>
+		<rootfolder
+		id="a02d2631-cac4-472d-84fc-95875401a1e7"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_KeePass_Application.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
