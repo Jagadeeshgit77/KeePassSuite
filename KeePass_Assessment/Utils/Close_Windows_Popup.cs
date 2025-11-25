@@ -24,47 +24,34 @@ namespace KeePass_Assessment.Utils
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Start_KeePass_Application recording.
+    ///The Close_Windows_Popup recording.
     /// </summary>
-    [TestModule("9cd96202-7e4c-43ca-9144-b25a4c700486", ModuleType.Recording, 1)]
-    public partial class Start_KeePass_Application : ITestModule
+    [TestModule("f165ffe2-2689-4bd3-a33d-1625fb701408", ModuleType.Recording, 1)]
+    public partial class Close_Windows_Popup : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::KeePass_Assessment.KeePass_AssessmentRepository repository.
         /// </summary>
         public static global::KeePass_Assessment.KeePass_AssessmentRepository repo = global::KeePass_Assessment.KeePass_AssessmentRepository.Instance;
 
-        static Start_KeePass_Application instance = new Start_KeePass_Application();
+        static Close_Windows_Popup instance = new Close_Windows_Popup();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Start_KeePass_Application()
+        public Close_Windows_Popup()
         {
-            StartAutProcessIDVar = "‪C:\\KeePass-2.60\\KeePass.exe";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Start_KeePass_Application Instance
+        public static Close_Windows_Popup Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _StartAutProcessIDVar;
-
-        /// <summary>
-        /// Gets or sets the value of variable StartAutProcessIDVar.
-        /// </summary>
-        [TestVariable("9a7ff503-fc46-4530-aa55-c7c7671634c8")]
-        public string StartAutProcessIDVar
-        {
-            get { return _StartAutProcessIDVar; }
-            set { _StartAutProcessIDVar = value; }
-        }
 
 #endregion
 
@@ -92,8 +79,8 @@ namespace KeePass_Assessment.Utils
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\KeePass-2.60\\KeePass.exe' in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication("C:\\KeePass-2.60\\KeePass.exe", "", "C:\\KeePass-2.60", false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'New_DB_Confirmation_PopUp.Btn_FileNotFound_OK' at 29;10.", repo.New_DB_Confirmation_PopUp.Btn_FileNotFound_OKInfo, new RecordItemIndex(0));
+            repo.New_DB_Confirmation_PopUp.Btn_FileNotFound_OK.Click("29;10");
             Delay.Milliseconds(0);
             
         }

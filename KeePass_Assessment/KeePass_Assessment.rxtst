@@ -178,6 +178,13 @@
 			<testcase
 			id="44d895ce-d617-4c2a-89fb-0c98d688d644"
 			name="TC01_Open_KeePass_application">
+				<parameters>
+					<param
+					mask="False"
+					name="Password"
+					value="TestPass123">
+					</param>
+				</parameters>
 			</testcase>
 			<testmodule
 			id="4506f7ed-9fde-42a0-bc4f-548d4d9ecc4c"
@@ -256,6 +263,12 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="b9f9fdb9-ba4e-4215-90e5-298e20e7b3e7"
+			name="closeFileNotFoundPopUp"
+			ref="fc1dd1c4-d479-4806-b672-9da2c94ff569"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="bf4adb90-9d9e-470a-a84f-43764fe4f745"
 			name="Click_On_Ok"
 			ref="8f00e1fa-d3f7-444e-b0cf-d33f92df42ae"
@@ -321,6 +334,10 @@
 						<testmodule
 						id="5c848e65-1559-4e65-a205-5687ce23b1ba"
 						name="Start_KeePass_Application">
+						</testmodule>
+						<testmodule
+						id="b9f9fdb9-ba4e-4215-90e5-298e20e7b3e7"
+						name="closeFileNotFoundPopUp">
 						</testmodule>
 					</testcase>
 					<testcase

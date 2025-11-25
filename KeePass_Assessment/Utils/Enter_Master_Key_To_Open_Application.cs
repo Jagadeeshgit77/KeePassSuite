@@ -24,46 +24,46 @@ namespace KeePass_Assessment.Utils
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Start_KeePass_Application recording.
+    ///The Enter_Master_Key_To_Open_Application recording.
     /// </summary>
-    [TestModule("9cd96202-7e4c-43ca-9144-b25a4c700486", ModuleType.Recording, 1)]
-    public partial class Start_KeePass_Application : ITestModule
+    [TestModule("6b19777e-8f13-4454-b626-756f0402dd14", ModuleType.Recording, 1)]
+    public partial class Enter_Master_Key_To_Open_Application : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::KeePass_Assessment.KeePass_AssessmentRepository repository.
         /// </summary>
         public static global::KeePass_Assessment.KeePass_AssessmentRepository repo = global::KeePass_Assessment.KeePass_AssessmentRepository.Instance;
 
-        static Start_KeePass_Application instance = new Start_KeePass_Application();
+        static Enter_Master_Key_To_Open_Application instance = new Enter_Master_Key_To_Open_Application();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Start_KeePass_Application()
+        public Enter_Master_Key_To_Open_Application()
         {
-            StartAutProcessIDVar = "‪C:\\KeePass-2.60\\KeePass.exe";
+            Password = "TestPass123";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Start_KeePass_Application Instance
+        public static Enter_Master_Key_To_Open_Application Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _StartAutProcessIDVar;
+        string _Password;
 
         /// <summary>
-        /// Gets or sets the value of variable StartAutProcessIDVar.
+        /// Gets or sets the value of variable Password.
         /// </summary>
-        [TestVariable("9a7ff503-fc46-4530-aa55-c7c7671634c8")]
-        public string StartAutProcessIDVar
+        [TestVariable("95bf8990-aac5-42ec-a249-4cf412d43a82")]
+        public string Password
         {
-            get { return _StartAutProcessIDVar; }
-            set { _StartAutProcessIDVar = value; }
+            get { return _Password; }
+            set { _Password = value; }
         }
 
 #endregion
@@ -92,8 +92,16 @@ namespace KeePass_Assessment.Utils
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\KeePass-2.60\\KeePass.exe' in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication("C:\\KeePass-2.60\\KeePass.exe", "", "C:\\KeePass-2.60", false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Master_Key_PopUp.Txt_Pwd' at 47;8.", repo.Master_Key_PopUp.Txt_PwdInfo, new RecordItemIndex(0));
+            repo.Master_Key_PopUp.Txt_Pwd.Click("47;8");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Password' with focus on 'Master_Key_PopUp.Txt_Pwd'.", repo.Master_Key_PopUp.Txt_PwdInfo, new RecordItemIndex(1));
+            repo.Master_Key_PopUp.Txt_Pwd.PressKeys(Password);
+            Delay.Milliseconds(20);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Master_Key_PopUp.Btn_OK' at 22;10.", repo.Master_Key_PopUp.Btn_OKInfo, new RecordItemIndex(2));
+            repo.Master_Key_PopUp.Btn_OK.Click("22;10");
             Delay.Milliseconds(0);
             
         }

@@ -593,6 +593,7 @@ namespace KeePass_Assessment
             RepoItemInfo _btn_okInfo;
             RepoItemInfo _btn_yesInfo;
             RepoItemInfo _btn_skipInfo;
+            RepoItemInfo _btn_filenotfound_okInfo;
 
             /// <summary>
             /// Creates a new New_DB_Confirmation_PopUp  folder.
@@ -603,6 +604,7 @@ namespace KeePass_Assessment
                 _btn_okInfo = new RepoItemInfo(this, "Btn_OK", "*/?/?/button[@windowtext='OK']", "", 30000, null, "ba94e155-58d8-4fb4-9fe5-e242374fd2e6");
                 _btn_yesInfo = new RepoItemInfo(this, "Btn_Yes", "button[@text='&Yes']", "button[@text='&Yes']", 30000, null, "90d2dbcf-ea30-47cd-b5f3-3974c37effd4");
                 _btn_skipInfo = new RepoItemInfo(this, "Btn_Skip", "container[@class='DirectUIHWND']/?/?/button[@text='Skip']", ".//button[@text='Skip' and @class='Button']", 30000, null, "e1a0e68f-543a-4b0c-bd96-69317a2bab52");
+                _btn_filenotfound_okInfo = new RepoItemInfo(this, "Btn_FileNotFound_OK", "button[@accessiblename='OK']", "", 30000, null, "9447e82c-58f7-4f18-9b3a-ed41aa23786a");
             }
 
             /// <summary>
@@ -698,6 +700,30 @@ namespace KeePass_Assessment
                 get
                 {
                     return _btn_skipInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Btn_FileNotFound_OK item.
+            /// </summary>
+            [RepositoryItem("9447e82c-58f7-4f18-9b3a-ed41aa23786a")]
+            public virtual Ranorex.Button Btn_FileNotFound_OK
+            {
+                get
+                {
+                    return _btn_filenotfound_okInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Btn_FileNotFound_OK item info.
+            /// </summary>
+            [RepositoryItemInfo("9447e82c-58f7-4f18-9b3a-ed41aa23786a")]
+            public virtual RepoItemInfo Btn_FileNotFound_OKInfo
+            {
+                get
+                {
+                    return _btn_filenotfound_okInfo;
                 }
             }
         }

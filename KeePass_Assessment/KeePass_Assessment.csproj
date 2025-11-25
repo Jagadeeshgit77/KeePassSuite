@@ -126,6 +126,9 @@
     <Compile Include="AssemblyInfo.cs">
       <id>c51f2cfc-6360-4e2e-a38e-17f84fce80ea</id>
     </Compile>
+    <Compile Include="CodeModules\closeFileNotFoundPopUp.cs">
+      <id>b90ab61b-1398-4284-8fff-80399e1de534</id>
+    </Compile>
     <Compile Include="DB_Form\Click_On_Ok.cs">
       <BoundTo>24f953d9-488f-4f12-aaff-e2b19a23adcd</BoundTo>
       <DependentUpon>Click_On_Ok.rxrec</DependentUpon>
@@ -233,6 +236,30 @@
       <DependentUpon>Add_Entry.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>8df2d28a-37fa-4e7b-baaa-59e2862ce4aa</id>
+    </Compile>
+    <Compile Include="Utils\Close_Windows_Popup.cs">
+      <BoundTo>716a8a15-ea93-4f62-bc92-d2d9f5bb7193</BoundTo>
+      <DependentUpon>Close_Windows_Popup.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>59445d54-4618-4c64-80ea-a554055f4d24</id>
+    </Compile>
+    <Compile Include="Utils\Close_Windows_Popup.UserCode.cs">
+      <BoundTo>716a8a15-ea93-4f62-bc92-d2d9f5bb7193</BoundTo>
+      <DependentUpon>Close_Windows_Popup.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ce3c45db-cb5d-444c-93a2-2adbd0b03eca</id>
+    </Compile>
+    <Compile Include="Utils\Enter_Master_Key_To_Open_Application.cs">
+      <BoundTo>d08aaf36-87a5-4d96-9f91-56cf4b4fa570</BoundTo>
+      <DependentUpon>Enter_Master_Key_To_Open_Application.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6e8098d7-9d24-4097-a94f-19a7acea3a85</id>
+    </Compile>
+    <Compile Include="Utils\Enter_Master_Key_To_Open_Application.UserCode.cs">
+      <BoundTo>d08aaf36-87a5-4d96-9f91-56cf4b4fa570</BoundTo>
+      <DependentUpon>Enter_Master_Key_To_Open_Application.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a48bce34-57e4-4770-a463-5ed3a976723e</id>
     </Compile>
     <Compile Include="Windows_File_Operations\Enter_filename_and_Save_the_Database.cs">
       <BoundTo>b3fd2c4f-e2a3-46ac-ade4-0843f0ba9454</BoundTo>
@@ -353,6 +380,16 @@
       <id>3ac1f3ea-373e-40ec-93ad-837d80486b6d</id>
       <recordtableid>0cf9fd5b-0d8d-41bd-95e2-2a4c6ecb6a32</recordtableid>
     </None>
+    <None Include="Utils\Close_Windows_Popup.rxrec">
+      <BoundTo>e6ff9fc8-4a6a-4022-b010-a572a097c101</BoundTo>
+      <id>716a8a15-ea93-4f62-bc92-d2d9f5bb7193</id>
+      <recordtableid>f165ffe2-2689-4bd3-a33d-1625fb701408</recordtableid>
+    </None>
+    <None Include="Utils\Enter_Master_Key_To_Open_Application.rxrec">
+      <BoundTo>e6ff9fc8-4a6a-4022-b010-a572a097c101</BoundTo>
+      <id>d08aaf36-87a5-4d96-9f91-56cf4b4fa570</id>
+      <recordtableid>6b19777e-8f13-4454-b626-756f0402dd14</recordtableid>
+    </None>
     <None Include="Windows_File_Operations\Enter_filename_and_Save_the_Database.rxrec">
       <BoundTo>e6ff9fc8-4a6a-4022-b010-a572a097c101</BoundTo>
       <id>b3fd2c4f-e2a3-46ac-ade4-0843f0ba9454</id>
@@ -412,6 +449,9 @@
     </Folder>
     <Folder Include="Entry">
       <id>b3d42574-5cc1-45d5-84e6-b2bb96e31d70</id>
+    </Folder>
+    <Folder Include="CodeModules">
+      <id>4b1b2feb-5d99-48b7-8a59-9f35b7cc436e</id>
     </Folder>
     <Folder Include="Tool_Bar">
       <id>454b18fc-c2b2-40f7-94db-00ec15c6e4b6</id>

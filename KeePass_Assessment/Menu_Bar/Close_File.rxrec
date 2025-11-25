@@ -30,7 +30,7 @@ mode="Global">
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="32;45"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="ca67b8a6-be2a-4d47-b8d9-a549cb60b282"
@@ -133,7 +133,6 @@ mode="Global">
 					/contextmenu[@processname='KeePass']/menuitem[@name='Close']
 				</path>
 				<robustPath>
-					/contextmenu[@processname='KeePass']/menuitem[@name='Close']
 				</robustPath>
 			</info>
 			<helperscreenshot

@@ -256,6 +256,16 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			searchtimeout="30000ms">
 				/form[@title='KeePass']/container[@class='DirectUIHWND']/?/?/button[@text='Skip']
 			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="9447e82c-58f7-4f18-9b3a-ed41aa23786a"
+			name="Btn_FileNotFound_OK"
+			refimgid="87e39605-0163-47af-b356-116e9e136882"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='KeePass']/button[@accessiblename='OK']
+			</item>
 			<basepath>
 				/form[@title='KeePass']
 			</basepath>

@@ -79,8 +79,8 @@ namespace KeePass_Assessment.Menu_Bar
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KeePass_App.Menu_Bar.File' at 32;45.", repo.KeePass_App.Menu_Bar.FileInfo, new RecordItemIndex(0));
-            repo.KeePass_App.Menu_Bar.File.Click("32;45");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KeePass_App.Menu_Bar.File' at Center.", repo.KeePass_App.Menu_Bar.FileInfo, new RecordItemIndex(0));
+            repo.KeePass_App.Menu_Bar.File.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'File_Sub_Menu.Close' at 48;10.", repo.File_Sub_Menu.CloseInfo, new RecordItemIndex(1));

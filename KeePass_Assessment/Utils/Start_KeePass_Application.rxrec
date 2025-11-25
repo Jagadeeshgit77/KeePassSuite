@@ -26,7 +26,7 @@ mode="Desktop">
 		<var
 		id="9a7ff503-fc46-4530-aa55-c7c7671634c8"
 		name="StartAutProcessIDVar">
-			‪C:\Users\Planit-1\Desktop\KeePass-2.60\KeePass.exe
+			‪C:\KeePass-2.60\KeePass.exe
 		</var>
 	</variables>
 	<recorditems>
@@ -37,14 +37,13 @@ mode="Desktop">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="FileName"
-				variable="StartAutProcessIDVar">
-				</binding>
 			</bindings>
 			<filename>
-				‪C:\Users\Planit-1\Desktop\KeePass-2.60\KeePass.exe
+				C:\KeePass-2.60\KeePass.exe
 			</filename>
+			<workingdir>
+				C:\KeePass-2.60
+			</workingdir>
 			<args>
 			</args>
 		</runapprecorditem>
