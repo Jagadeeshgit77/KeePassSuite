@@ -304,7 +304,7 @@ mwxb1ewJHu8HT5XoEEGuhlIAAAAASUVORK5CYII=
 			refimgid="5942ab2a-5e61-4be2-b6a6-e8aeff3747e5"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@title='Create New Database']/?//?/text[@accessiblename='File name:']
+				/form[@title='Create New Database']//text[@class='Edit' and @accessiblekeyboardshortcut='Alt+n']
 			</item>
 			<item
 			addcaps="button,nativewindow"

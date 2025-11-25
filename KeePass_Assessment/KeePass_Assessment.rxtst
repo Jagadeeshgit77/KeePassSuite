@@ -280,6 +280,14 @@
 			ref="671ee36e-324a-46d7-9e5a-15e3d4bbfe08"
 			type="Recording">
 			</testmodule>
+			<setup
+			id="d9aa2574-b8bc-4b97-9738-edc411ba57fe"
+			name="setup">
+			</setup>
+			<teardown
+			id="ee67a4fc-dbba-443b-8dab-70ea1d64e36b"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="f01e54d0-6c6d-4c83-9b91-b923979bdaf4"
 			name="Validate_User_Entry"
@@ -331,10 +339,14 @@
 					<testcase
 					id="44d895ce-d617-4c2a-89fb-0c98d688d644"
 					name="TC01_Open_KeePass_application">
-						<testmodule
-						id="5c848e65-1559-4e65-a205-5687ce23b1ba"
-						name="Start_KeePass_Application">
-						</testmodule>
+						<setup
+						id="d9aa2574-b8bc-4b97-9738-edc411ba57fe"
+						name="setup">
+							<testmodule
+							id="5c848e65-1559-4e65-a205-5687ce23b1ba"
+							name="Start_KeePass_Application">
+							</testmodule>
+						</setup>
 						<testmodule
 						id="b9f9fdb9-ba4e-4215-90e5-298e20e7b3e7"
 						name="closeFileNotFoundPopUp">
@@ -403,10 +415,14 @@
 					<testcase
 					id="34f49880-492a-41db-9f51-c47ea0f32650"
 					name="TC05_Close_KeePass_Application">
-						<testmodule
-						id="586697b7-71ea-45d3-b0d6-0f123787896f"
-						name="Close_KeePass_Application">
-						</testmodule>
+						<teardown
+						id="ee67a4fc-dbba-443b-8dab-70ea1d64e36b"
+						name="teardown">
+							<testmodule
+							id="586697b7-71ea-45d3-b0d6-0f123787896f"
+							name="Close_KeePass_Application">
+							</testmodule>
+						</teardown>
 					</testcase>
 				</testcase>
 			</testsuite>

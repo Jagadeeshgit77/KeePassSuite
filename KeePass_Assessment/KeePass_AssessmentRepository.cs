@@ -743,7 +743,7 @@ namespace KeePass_Assessment
             public Create_New_DatabaseAppFolder(RepoGenBaseFolder parentFolder) :
                     base("Create_New_Database", "/form[@title='Create New Database']", parentFolder, 30000, null, true, "1f34496e-5cd2-4a37-a1f3-4451db53638c", "")
             {
-                _txtfield_filenameInfo = new RepoItemInfo(this, "TxtField_FileName", "?//?/text[@accessiblename='File name:']", "", 30000, null, "7af22ae8-f15d-4cfb-bbe1-0a56eb6d79ff");
+                _txtfield_filenameInfo = new RepoItemInfo(this, "TxtField_FileName", ".//text[@class='Edit' and @accessiblekeyboardshortcut='Alt+n']", "", 30000, null, "7af22ae8-f15d-4cfb-bbe1-0a56eb6d79ff");
                 _btn_saveInfo = new RepoItemInfo(this, "Btn_Save", "button[@text='&Save']", "button[@text='&Save']", 30000, null, "a60535a5-894f-4e9f-85fb-66524709211e");
             }
 
