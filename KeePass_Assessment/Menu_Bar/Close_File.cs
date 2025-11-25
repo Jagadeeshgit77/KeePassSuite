@@ -83,8 +83,8 @@ namespace KeePass_Assessment.Menu_Bar
             repo.KeePass_App.Menu_Bar.File.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'File_Sub_Menu.Close' at 48;10.", repo.File_Sub_Menu.CloseInfo, new RecordItemIndex(1));
-            repo.File_Sub_Menu.Close.Click("48;10");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'File_Sub_Menu.Close' at Center.", repo.File_Sub_Menu.CloseInfo, new RecordItemIndex(1));
+            repo.File_Sub_Menu.Close.Click();
             Delay.Milliseconds(0);
             
         }

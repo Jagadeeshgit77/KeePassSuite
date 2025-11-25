@@ -112,8 +112,8 @@ namespace KeePass_Assessment.Windows_File_Operations
             repo.Open_Database_File.TxtField_FileName.PressKeys(FileName);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open_Database_File.Btn_Open' at 50;17.", repo.Open_Database_File.Btn_OpenInfo, new RecordItemIndex(5));
-            repo.Open_Database_File.Btn_Open.Click("50;17");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Open_Database_File.Btn_Open' at Center.", repo.Open_Database_File.Btn_OpenInfo, new RecordItemIndex(5));
+            repo.Open_Database_File.Btn_Open.Click();
             Delay.Milliseconds(0);
             
         }

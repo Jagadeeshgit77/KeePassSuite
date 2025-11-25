@@ -92,16 +92,16 @@ namespace KeePass_Assessment.Utils
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Master_Key_PopUp.Txt_Pwd' at 47;8.", repo.Master_Key_PopUp.Txt_PwdInfo, new RecordItemIndex(0));
-            repo.Master_Key_PopUp.Txt_Pwd.Click("47;8");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Master_Key_PopUp.Txt_Pwd' at Center.", repo.Master_Key_PopUp.Txt_PwdInfo, new RecordItemIndex(0));
+            repo.Master_Key_PopUp.Txt_Pwd.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Password' with focus on 'Master_Key_PopUp.Txt_Pwd'.", repo.Master_Key_PopUp.Txt_PwdInfo, new RecordItemIndex(1));
             repo.Master_Key_PopUp.Txt_Pwd.PressKeys(Password);
             Delay.Milliseconds(20);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Master_Key_PopUp.Btn_OK' at 22;10.", repo.Master_Key_PopUp.Btn_OKInfo, new RecordItemIndex(2));
-            repo.Master_Key_PopUp.Btn_OK.Click("22;10");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Master_Key_PopUp.Btn_OK' at Center.", repo.Master_Key_PopUp.Btn_OKInfo, new RecordItemIndex(2));
+            repo.Master_Key_PopUp.Btn_OK.Click();
             Delay.Milliseconds(0);
             
         }

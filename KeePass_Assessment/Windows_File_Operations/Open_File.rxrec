@@ -1290,7 +1290,7 @@ rzn64oopDZXd/KYqEVhwfm+lFFFIo//Z
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="50;17"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="60d2241b-8c96-4d71-889d-c6433574d2f3"

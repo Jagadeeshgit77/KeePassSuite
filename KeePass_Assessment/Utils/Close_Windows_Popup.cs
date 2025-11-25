@@ -79,8 +79,8 @@ namespace KeePass_Assessment.Utils
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'New_DB_Confirmation_PopUp.Btn_FileNotFound_OK' at 29;10.", repo.New_DB_Confirmation_PopUp.Btn_FileNotFound_OKInfo, new RecordItemIndex(0));
-            repo.New_DB_Confirmation_PopUp.Btn_FileNotFound_OK.Click("29;10");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'New_DB_Confirmation_PopUp.Btn_FileNotFound_OK' at Center.", repo.New_DB_Confirmation_PopUp.Btn_FileNotFound_OKInfo, new RecordItemIndex(0));
+            repo.New_DB_Confirmation_PopUp.Btn_FileNotFound_OK.Click();
             Delay.Milliseconds(0);
             
         }
